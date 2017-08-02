@@ -53,4 +53,9 @@
     <string name="Method_payment">Choose method of payment below</string>
     <string name="title_activity_utility">Utility</string>
     <string name="textview">provider save</string>
+    <string name="setting">Setting</string>
+    <string name="logout">logout</string>
+    <string name="change_password">change password</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="Utility_provider">Utility provider</string>
 </resources>

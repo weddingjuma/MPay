@@ -20,7 +20,8 @@
         android:text="Make payment below"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/checkBox3"
-        android:layout_toEndOf="@+id/checkBox3" />
+        android:layout_toEndOf="@+id/checkBox3"
+        tools:ignore="HardcodedText" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -156,34 +157,6 @@
         android:layout_alignLeft="@+id/editText5"
         android:layout_alignStart="@+id/editText5" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/MPesa"
-        android:layout_below="@+id/textView9"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Card"
-        android:layout_below="@+id/radioButton"
-         />
-
-    <Button
-        android:id="@+id/btnPayment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Payment"
-        android:layout_below="@+id/radioButton"
-        android:layout_alignLeft="@+id/textView8"
-        android:layout_alignStart="@+id/textView8"
-        android:layout_marginTop="17dp" />
-
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
@@ -191,5 +164,39 @@
         android:text="@string/Method_payment"
         android:layout_below="@+id/editText6"
         android:layout_marginTop="13dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/rGroup"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/MPesa" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Card" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/make_payment"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rGroup"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

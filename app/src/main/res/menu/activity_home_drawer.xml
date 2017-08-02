@@ -5,32 +5,20 @@
         <item
             android:id="@+id/nav_utility"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Utility provider" />
+            android:title="@string/Utility_provider" />
         <item
             android:id="@+id/nav_password"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="change password" />
+            android:title="@string/change_password" />
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="logout" />
+            android:title="@string/logout" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="@string/setting" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
 
 </menu>
