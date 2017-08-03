@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">M-Pay</string>
     <string name="account">Have an account?</string>
-    <string name="username">username</string>
-    <string name="password">password</string>
-    <string name="forgot_password">forgot password?</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
     <string name="Login">Log in</string>
     <string name="new_user">New to M-Pay?</string>
     <string name="signup">Sign up</string>
@@ -41,7 +41,6 @@
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
@@ -52,12 +51,14 @@
     </string>
     <string name="Method_payment">Choose method of payment below</string>
     <string name="title_activity_utility">Utility</string>
-    <string name="textview">provider save</string>
     <string name="setting">Setting</string>
     <string name="logout">logout</string>
-    <string name="change_password">change password</string>
+    <string name="change_password">Change password</string>
     <string name="make_payment">Make Payment</string>
     <string name="Utility_provider">Utility provider</string>
     <string name="card_number">Card number</string>
     <string name="security_code">Security code</string>
+    <string name="find_your_m_pay_account">Find your M-Pay account</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="Search">Search</string>
 </resources>

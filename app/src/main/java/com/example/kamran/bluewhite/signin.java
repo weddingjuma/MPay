@@ -9,18 +9,21 @@ import android.widget.TextView;
 
 public class signin extends AppCompatActivity {
 
-    ImageView sback;
     TextView sign;
+    TextView signupforfree;
+    TextView getPassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
-        sback = (ImageView)findViewById(R.id.sinb);
         sign = (TextView)findViewById(R.id.sin);
-        sback.setOnClickListener(new View.OnClickListener() {
+        signupforfree = (TextView)findViewById(R.id.signupforfree);
+        getPassword = (TextView)findViewById(R.id.getpass);
+        signupforfree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(signin.this,main.class);
+
+                Intent it = new Intent(signin.this,signup.class);
                 startActivity(it);
 
             }
@@ -30,6 +33,14 @@ public class signin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(signin.this,Home.class);
+                startActivity(it);
+            }
+        });
+
+        getPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(signin.this,Forgot_password.class);
                 startActivity(it);
             }
         });

@@ -107,9 +107,14 @@ public class Utility extends AppCompatActivity
             // Handle the camera action
             Intent cinemaIntent = new Intent(this, Home.class);
             startActivity(cinemaIntent);
+        } else if (id == R.id.nav_utility) {
+            Intent cinemaIntent = new Intent(this, Utility.class);
+            startActivity(cinemaIntent);
         } else if (id == R.id.nav_password) {
 
         } else if (id == R.id.nav_logout) {
+            Intent cinemaIntent = new Intent(this, signin.class);
+            startActivity(cinemaIntent);
 
         } else if (id == R.id.nav_manage) {
 

@@ -200,14 +200,13 @@
             android:id="@+id/result_Number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-1dp"
+            android:layout_marginTop="-12dp"
             android:ems="10"
             android:inputType="number" />
         <TextView
             android:id="@+id/result_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:text="@string/security_code" />
 
         <EditText
@@ -215,7 +214,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="5"
-            android:layout_marginTop="-3dp"
+            android:inputType="number" />
+        <TextView
+            android:id="@+id/expiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry date" />
+
+        <EditText
+            android:id="@+id/expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
             android:inputType="number" />
 
     </RadioGroup>
@@ -226,7 +236,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/make_payment"
-        android:layout_marginTop="20dp"
         android:layout_below="@+id/rGroup"
         android:layout_centerHorizontal="true" />
 

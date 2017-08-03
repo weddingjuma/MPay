@@ -27,6 +27,8 @@ public class Home extends AppCompatActivity
     EditText final_result;
     TextView final_card;
     EditText final_code;
+    TextView expiry;
+    EditText expiry_date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,10 +39,14 @@ public class Home extends AppCompatActivity
         final_result = (EditText) findViewById(R.id.result_Number);
         final_card = (TextView) findViewById(R.id.result_card);
         final_code = (EditText) findViewById(R.id.result_code);
+        expiry = (TextView) findViewById(R.id.expiry);
+        expiry_date = (EditText) findViewById(R.id.expiry_date);
         final_account.setVisibility(View.INVISIBLE);
         final_result.setVisibility(View.INVISIBLE);
         final_card.setVisibility(View.INVISIBLE);
         final_code.setVisibility(View.INVISIBLE);
+        expiry.setVisibility(View.INVISIBLE);
+        expiry_date.setVisibility(View.INVISIBLE);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -95,6 +101,8 @@ public class Home extends AppCompatActivity
                     final_result.setVisibility(View.INVISIBLE);
                     final_card.setVisibility(View.INVISIBLE);
                     final_code.setVisibility(View.INVISIBLE);
+                    expiry.setVisibility(View.INVISIBLE);
+                    expiry_date.setVisibility(View.INVISIBLE);
                 }
                 break;
 
@@ -105,6 +113,8 @@ public class Home extends AppCompatActivity
                     final_result.setVisibility(View.VISIBLE);
                     final_card.setVisibility(View.VISIBLE);
                     final_code.setVisibility(View.VISIBLE);
+                    expiry.setVisibility(View.VISIBLE);
+                    expiry_date.setVisibility(View.VISIBLE);
                 }
                 else
                 {
@@ -112,6 +122,8 @@ public class Home extends AppCompatActivity
                     final_result.setVisibility(View.INVISIBLE);
                     final_card.setVisibility(View.INVISIBLE);
                     final_code.setVisibility(View.INVISIBLE);
+                    expiry.setVisibility(View.INVISIBLE);
+                    expiry_date.setVisibility(View.INVISIBLE);
 
                 }
                 break;
@@ -143,17 +155,24 @@ public class Home extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
+
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         android.app.FragmentManager fragmentManager = getFragmentManager();
-        if (id == R.id.nav_utility) {
+        if (id == R.id.nav_payment) {
             // Handle the camera action
+            Intent cinemaIntent = new Intent(this, Home.class);
+            startActivity(cinemaIntent);
+        } else if (id == R.id.nav_utility) {
             Intent cinemaIntent = new Intent(this, Utility.class);
             startActivity(cinemaIntent);
-        } else if (id == R.id.nav_password) {
+        }
+         else if (id == R.id.nav_password) {
 
         } else if (id == R.id.nav_logout) {
+            Intent cinemaIntent = new Intent(this, signin.class);
+            startActivity(cinemaIntent);
 
         } else if (id == R.id.nav_manage) {
 
