@@ -14,17 +14,34 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.TextView;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawer;
     NavigationView navigationView;
     Toolbar toolbar=null;
+    TextView final_account;
+    EditText final_result;
+    TextView final_card;
+    EditText final_code;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        final_account = (TextView) findViewById(R.id.result_text);
+        final_result = (EditText) findViewById(R.id.result_Number);
+        final_card = (TextView) findViewById(R.id.result_card);
+        final_code = (EditText) findViewById(R.id.result_code);
+        final_account.setVisibility(View.INVISIBLE);
+        final_result.setVisibility(View.INVISIBLE);
+        final_card.setVisibility(View.INVISIBLE);
+        final_code.setVisibility(View.INVISIBLE);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -46,13 +63,13 @@ public class Home extends AppCompatActivity
 
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder(Home.this);
                 mBuilder.setMessage(R.string.dialog_msg);
-                mBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener()  {
+                mBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
 
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
-                        Intent intent = new  Intent(getBaseContext(), Home.class);
+                        Intent intent = new Intent(getBaseContext(), Home.class);
                         startActivity(intent);
                     }
                 });
@@ -65,6 +82,45 @@ public class Home extends AppCompatActivity
 
 
     }
+
+    public void selectPayment(View view)
+    {
+        boolean checked = ((RadioButton) view).isChecked();
+        switch (view.getId())
+        {
+            case R.id.paymentMPesa:
+                if (checked) {
+                   // final_result.setText("you select M-Pesa");
+                    final_account.setVisibility(View.INVISIBLE);
+                    final_result.setVisibility(View.INVISIBLE);
+                    final_card.setVisibility(View.INVISIBLE);
+                    final_code.setVisibility(View.INVISIBLE);
+                }
+                break;
+
+            case R.id.paymentCard:
+                if (checked) {
+                    //final_result.setText("you select card");
+                    final_account.setVisibility(View.VISIBLE);
+                    final_result.setVisibility(View.VISIBLE);
+                    final_card.setVisibility(View.VISIBLE);
+                    final_code.setVisibility(View.VISIBLE);
+                }
+                else
+                {
+                    final_account.setVisibility(View.INVISIBLE);
+                    final_result.setVisibility(View.INVISIBLE);
+                    final_card.setVisibility(View.INVISIBLE);
+                    final_code.setVisibility(View.INVISIBLE);
+
+                }
+                break;
+
+        }
+
+    }
+
+
 
     @Override
     public void onBackPressed() {

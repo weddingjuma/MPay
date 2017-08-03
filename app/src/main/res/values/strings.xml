@@ -58,4 +58,6 @@
     <string name="change_password">change password</string>
     <string name="make_payment">Make Payment</string>
     <string name="Utility_provider">Utility provider</string>
+    <string name="card_number">Card number</string>
+    <string name="security_code">Security code</string>
 </resources>
