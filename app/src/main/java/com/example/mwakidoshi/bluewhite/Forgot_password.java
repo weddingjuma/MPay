@@ -1,4 +1,4 @@
-package com.example.kamran.bluewhite;
+package com.example.mwakidoshi.bluewhite;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

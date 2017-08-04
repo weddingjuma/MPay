@@ -1,4 +1,4 @@
-package com.example.kamran.bluewhite;
+package com.example.mwakidoshi.bluewhite;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

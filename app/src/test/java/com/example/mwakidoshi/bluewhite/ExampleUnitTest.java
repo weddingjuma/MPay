@@ -1,4 +1,4 @@
-package com.example.kamran.bluewhite;
+package com.example.mwakidoshi.bluewhite;
 
 import org.junit.Test;
 
