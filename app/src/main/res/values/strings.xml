@@ -34,7 +34,7 @@
     <string name="MPesa">M-Pesa</string>
     <string name="Card">Card</string>
     <string name="Save">Save</string>
-    <string name="AccounNO">A/C No</string>
+    <string name="AccounNO">Enter account number</string>
     <string name="Save_alertbox">Save successfully</string>
     <string name="title_activity_login">Sign in</string>
 

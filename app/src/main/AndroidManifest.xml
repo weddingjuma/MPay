@@ -26,7 +26,6 @@
             android:label="@string/title_activity_utility"
             android:theme="@style/AppTheme" />
         <activity android:name=".Forgot_password" />
-        <activity android:name=".Test"></activity>
     </application>
 
 </manifest>
