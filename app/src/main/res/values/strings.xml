@@ -52,7 +52,7 @@
     <string name="Method_payment">Choose method of payment below</string>
     <string name="title_activity_utility">Utility</string>
     <string name="setting">Setting</string>
-    <string name="logout">logout</string>
+    <string name="logout">Logout</string>
     <string name="change_password">Change password</string>
     <string name="make_payment">Make Payment</string>
     <string name="Utility_provider">Utility provider</string>
@@ -61,4 +61,6 @@
     <string name="find_your_m_pay_account">Find your M-Pay account</string>
     <string name="enter_your_email">Enter your email</string>
     <string name="Search">Search</string>
+    <string name="enter_expiry_date">Enter expiry date</string>
+    <string name="choose_method_of_payment_below">Choose method of payment below</string>
 </resources>

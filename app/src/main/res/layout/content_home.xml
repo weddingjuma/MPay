@@ -17,219 +17,162 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Make payment below"
+        android:text="Please make your payment below"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/checkBox3"
-        android:layout_toEndOf="@+id/checkBox3"
         tools:ignore="HardcodedText" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="20dp"
         android:text="@string/Zuku"
         android:layout_below="@+id/textView2"
-         />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/checkBox"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_marginLeft="27dp"
-        android:layout_marginStart="27dp"
-        android:text="@string/KES" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_marginLeft="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_toEndOf="@+id/textView3"
-        android:layout_toRightOf="@+id/textView3"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="textPersonName"
+        android:hint="@string/KES"
+        android:layout_above="@+id/checkBox2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="12dp"
         android:text="@string/KPLC"
         android:layout_below="@+id/checkBox"
-        android:layout_alignLeft="@+id/checkBox"
-        android:layout_alignStart="@+id/checkBox" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/KES"
-        android:layout_alignBaseline="@+id/checkBox2"
-        android:layout_alignBottom="@+id/checkBox2"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignBottom="@+id/checkBox2"
         android:layout_alignLeft="@+id/editText"
         android:layout_alignStart="@+id/editText"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="textPersonName"
+        android:hint="@string/KES" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
         android:text="@string/NCWSC"
         android:layout_below="@+id/checkBox2"
-        android:layout_alignLeft="@+id/checkBox2"
-        android:layout_alignStart="@+id/checkBox2" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/KES"
-        android:layout_alignBaseline="@+id/checkBox3"
-        android:layout_alignBottom="@+id/checkBox3"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:layout_below="@+id/editText2"
+        android:layout_alignBottom="@+id/checkBox6"
         android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="@string/Charges"
-        android:layout_below="@+id/checkBox3"
-        android:layout_alignLeft="@+id/textView8"
-        android:layout_alignStart="@+id/textView8" />
-
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText2"
         android:ems="10"
-        android:inputType="number"
-        android:layout_below="@+id/checkBox3"
-        android:layout_alignLeft="@+id/editText3"
-        android:layout_alignStart="@+id/editText3" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Total"
-        android:layout_alignBaseline="@+id/editText6"
-        android:layout_alignBottom="@+id/editText6"
-        android:layout_alignRight="@+id/textView5"
-        android:layout_alignEnd="@+id/textView5" />
+        android:inputType="textPersonName"
+        android:hint="@string/KES" />
 
     <EditText
         android:id="@+id/editText6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:layout_below="@+id/editText5"
-        android:layout_alignLeft="@+id/editText5"
-        android:layout_alignStart="@+id/editText5" />
+        android:ems="7"
+        android:inputType="textPersonName"
+        android:hint="@string/Charges"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/checkBox6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-    <TextView
-        android:id="@+id/textView9"
+    <EditText
+        android:id="@+id/editText9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Method_payment"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:ems="7"
+        android:inputType="textPersonName"
+        android:hint="@string/Total"
+        android:layout_alignBaseline="@+id/editText6"
+        android:layout_alignBottom="@+id/editText6"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/choose_method_of_payment_below"
         android:layout_below="@+id/editText6"
-        android:layout_marginTop="13dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/rGroup"
-        android:layout_below="@+id/textView9"
+        android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp">
 
         <RadioButton
             android:id="@+id/paymentMPesa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/MPesa"
-            android:onClick="selectPayment"/>
+            android:onClick="selectPayment" />
 
         <RadioButton
             android:id="@+id/paymentCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginTop="1dp"
             android:text="@string/Card"
             android:onClick="selectPayment"/>
-
-        <TextView
-            android:id="@+id/result_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:text="@string/card_number" />
-
         <EditText
             android:id="@+id/result_Number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-12dp"
+            android:hint="@string/card_number"
+            android:layout_marginTop="-8dp"
             android:ems="10"
             android:inputType="number" />
-        <TextView
-            android:id="@+id/result_card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/security_code" />
-
         <EditText
             android:id="@+id/result_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="5"
+            android:hint="@string/security_code"
+            android:layout_marginTop="-8dp"
+            android:ems="10"
             android:inputType="number" />
-        <TextView
-            android:id="@+id/expiry"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Expiry date" />
-
         <EditText
             android:id="@+id/expiry_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="5"
-            android:inputType="number" />
+            android:hint="@string/enter_expiry_date"
+            android:layout_marginTop="-8dp"
+            android:ems="10"
+            android:inputType="date" />
+
+
 
     </RadioGroup>
-
 
     <Button
         android:id="@+id/btnPayment"
@@ -237,6 +180,8 @@
         android:layout_height="wrap_content"
         android:text="@string/make_payment"
         android:layout_below="@+id/rGroup"
-        android:layout_centerHorizontal="true" />
+        android:layout_toRightOf="@+id/editText6"
+        android:layout_toEndOf="@+id/editText6" />
+
 
 </RelativeLayout>

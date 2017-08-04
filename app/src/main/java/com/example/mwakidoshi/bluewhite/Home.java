@@ -35,17 +35,12 @@ public class Home extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        final_account = (TextView) findViewById(R.id.result_text);
         final_result = (EditText) findViewById(R.id.result_Number);
-        final_card = (TextView) findViewById(R.id.result_card);
-        final_code = (EditText) findViewById(R.id.result_code);
-        expiry = (TextView) findViewById(R.id.expiry);
-        expiry_date = (EditText) findViewById(R.id.expiry_date);
-        final_account.setVisibility(View.INVISIBLE);
+       final_code = (EditText) findViewById(R.id.result_code);
+       expiry_date = (EditText) findViewById(R.id.expiry_date);
+
         final_result.setVisibility(View.INVISIBLE);
-        final_card.setVisibility(View.INVISIBLE);
         final_code.setVisibility(View.INVISIBLE);
-        expiry.setVisibility(View.INVISIBLE);
         expiry_date.setVisibility(View.INVISIBLE);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -97,11 +92,8 @@ public class Home extends AppCompatActivity
             case R.id.paymentMPesa:
                 if (checked) {
                    // final_result.setText("you select M-Pesa");
-                    final_account.setVisibility(View.INVISIBLE);
                     final_result.setVisibility(View.INVISIBLE);
-                    final_card.setVisibility(View.INVISIBLE);
                     final_code.setVisibility(View.INVISIBLE);
-                    expiry.setVisibility(View.INVISIBLE);
                     expiry_date.setVisibility(View.INVISIBLE);
                 }
                 break;
@@ -109,20 +101,14 @@ public class Home extends AppCompatActivity
             case R.id.paymentCard:
                 if (checked) {
                     //final_result.setText("you select card");
-                    final_account.setVisibility(View.VISIBLE);
                     final_result.setVisibility(View.VISIBLE);
-                    final_card.setVisibility(View.VISIBLE);
                     final_code.setVisibility(View.VISIBLE);
-                    expiry.setVisibility(View.VISIBLE);
                     expiry_date.setVisibility(View.VISIBLE);
                 }
                 else
                 {
-                    final_account.setVisibility(View.INVISIBLE);
                     final_result.setVisibility(View.INVISIBLE);
-                    final_card.setVisibility(View.INVISIBLE);
                     final_code.setVisibility(View.INVISIBLE);
-                    expiry.setVisibility(View.INVISIBLE);
                     expiry_date.setVisibility(View.INVISIBLE);
 
                 }
