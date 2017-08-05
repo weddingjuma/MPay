@@ -29,8 +29,7 @@
         android:layout_height="53dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Username"
-        android:textColor="#3090C7"
+        android:hint="@string/username"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -48,6 +47,7 @@
         android:layout_marginRight="21dp"
         app:layout_constraintVertical_bias="1.0"
         app:layout_constraintBottom_toBottomOf="@+id/pswrd" />
+
 
     <EditText
         android:id="@+id/pswrd"
