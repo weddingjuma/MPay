@@ -1,9 +1,11 @@
 package com.example.mwakidoshi.bluewhite;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class Change_password extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -33,6 +36,33 @@ public class Change_password extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        //implement save button
+
+        Button btnUpdate = (Button) findViewById(R.id.btnUpdate);
+
+        btnUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                AlertDialog.Builder mBuilder = new AlertDialog.Builder(Change_password.this);
+                mBuilder.setMessage(getString(R.string.Update_pass));
+                mBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener()  {
+
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        Intent intent = new  Intent(getBaseContext(), Change_password.class);
+                        startActivity(intent);
+                    }
+                });
+                AlertDialog alertDialog = mBuilder.create();
+                alertDialog.show();
+
+
+            }
+        });
     }
 
     @Override
