@@ -60,10 +60,9 @@
         android:ems="10"
         android:hint="@string/AccounNO"
         android:inputType="textPersonName"
-        android:layout_alignBaseline="@+id/checkBox4"
         android:layout_alignBottom="@+id/checkBox4"
-        android:layout_alignLeft="@+id/editText8"
-        android:layout_alignStart="@+id/editText8" />
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
 
     <CheckBox
         android:id="@+id/checkBox5"
@@ -82,19 +81,25 @@
         android:ems="10"
         android:hint="@string/AccounNO"
         android:inputType="textPersonName"
-        android:layout_alignBaseline="@+id/checkBox5"
         android:layout_alignBottom="@+id/checkBox5"
-        android:layout_alignRight="@+id/btnSave"
-        android:layout_alignEnd="@+id/btnSave" />
+        android:layout_alignLeft="@+id/editText7"
+        android:layout_alignStart="@+id/editText7" />
 
     <Button
         android:id="@+id/btnSave"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:hint="@string/Save"
-        android:layout_below="@+id/editText8"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2" />
+        android:layout_width="321dp"
+        android:layout_height="54dp"
+        android:text="@string/Save"
+        android:background="@drawable/angle"
+        android:textSize="19dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteY="234dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="52dp"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/checkBox5"
+        android:layout_alignRight="@+id/editText8"
+        android:layout_alignEnd="@+id/editText8" />
 
 </RelativeLayout>

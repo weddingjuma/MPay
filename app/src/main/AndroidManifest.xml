@@ -26,6 +26,11 @@
             android:label="@string/title_activity_utility"
             android:theme="@style/AppTheme" />
         <activity android:name=".Forgot_password" />
+        <activity android:name=".King" />
+        <activity
+            android:name=".Change_password"
+            android:label="@string/title_activity_change_password"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

@@ -1,9 +1,9 @@
 package com.example.mwakidoshi.bluewhite;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,18 +13,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 
-public class Utility extends AppCompatActivity
+public class Change_password extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_utility);
+        setContentView(R.layout.activity_change_password);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -35,34 +33,6 @@ public class Utility extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-        //implement save button
-
-        Button btnSave = (Button) findViewById(R.id.btnSave);
-
-        btnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                AlertDialog.Builder mBuilder = new AlertDialog.Builder(Utility.this);
-                mBuilder.setMessage(R.string.Save_alertbox);
-                mBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener()  {
-
-
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                        Intent intent = new  Intent(getBaseContext(), Utility.class);
-                        startActivity(intent);
-                    }
-                });
-                AlertDialog alertDialog = mBuilder.create();
-                alertDialog.show();
-
-
-            }
-        });
-
     }
 
     @Override
@@ -82,19 +52,6 @@ public class Utility extends AppCompatActivity
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-
-
-        return super.onOptionsItemSelected(item);
-    }
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -108,7 +65,8 @@ public class Utility extends AppCompatActivity
         } else if (id == R.id.nav_utility) {
             Intent cinemaIntent = new Intent(this, Utility.class);
             startActivity(cinemaIntent);
-        } else if (id == R.id.nav_password) {
+        }
+        else if (id == R.id.nav_password) {
             Intent cinemaIntent = new Intent(this, Change_password.class);
             startActivity(cinemaIntent);
 

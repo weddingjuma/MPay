@@ -176,12 +176,19 @@
 
     <Button
         android:id="@+id/btnPayment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="321dp"
+        android:layout_height="54dp"
         android:text="@string/make_payment"
+        android:background="@drawable/angle"
+        android:textSize="19dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteY="234dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="52dp"
+        android:layout_marginTop="13dp"
         android:layout_below="@+id/rGroup"
-        android:layout_toRightOf="@+id/editText6"
-        android:layout_toEndOf="@+id/editText6" />
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
