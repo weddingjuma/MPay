@@ -22,7 +22,7 @@
         android:layout_alignParentTop="true" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkZuku"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
@@ -38,20 +38,21 @@
         android:ems="10"
         android:hint="@string/AccounNO"
         android:inputType="textPersonName"
-        android:layout_alignBaseline="@+id/checkBox"
+        android:layout_alignBaseline="@+id/checkZuku"
         android:layout_alignBottom="@+id/checkBox"
         android:layout_alignRight="@+id/textView2"
         android:layout_alignEnd="@+id/textView2" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/checkKPLC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:hint="@string/KPLC"
         android:layout_below="@+id/editText4"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="selectUtility"/>
 
     <EditText
         android:id="@+id/editText7"
@@ -60,12 +61,12 @@
         android:ems="10"
         android:hint="@string/AccounNO"
         android:inputType="textPersonName"
-        android:layout_alignBottom="@+id/checkBox4"
+        android:layout_alignBottom="@+id/checkKPLC"
         android:layout_alignLeft="@+id/editText4"
         android:layout_alignStart="@+id/editText4" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/checkNCWSC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
@@ -81,7 +82,7 @@
         android:ems="10"
         android:hint="@string/AccounNO"
         android:inputType="textPersonName"
-        android:layout_alignBottom="@+id/checkBox5"
+        android:layout_alignBottom="@+id/checkNCWSC"
         android:layout_alignLeft="@+id/editText7"
         android:layout_alignStart="@+id/editText7" />
 
@@ -98,7 +99,7 @@
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_editor_absoluteX="52dp"
         android:layout_marginTop="53dp"
-        android:layout_below="@+id/checkBox5"
+        android:layout_below="@+id/checkNCWSC"
         android:layout_alignRight="@+id/editText8"
         android:layout_alignEnd="@+id/editText8" />
 

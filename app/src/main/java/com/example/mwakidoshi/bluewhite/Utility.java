@@ -109,8 +109,6 @@ public class Utility extends AppCompatActivity
             Intent cinemaIntent = new Intent(this, Utility.class);
             startActivity(cinemaIntent);
         } else if (id == R.id.nav_password) {
-            Intent cinemaIntent = new Intent(this, Change_password.class);
-            startActivity(cinemaIntent);
 
         } else if (id == R.id.nav_logout) {
             Intent cinemaIntent = new Intent(this, signin.class);
