@@ -29,19 +29,21 @@
         android:text="@string/Zuku"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="selectUtility"/>
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editZuku"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/AccounNO"
         android:inputType="textPersonName"
         android:layout_alignBaseline="@+id/checkZuku"
-        android:layout_alignBottom="@+id/checkBox"
+        android:layout_alignBottom="@+id/checkZuku"
         android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2" />
+        android:layout_alignEnd="@+id/textView2"
+        android:focusable="false"/>
 
     <CheckBox
         android:id="@+id/checkKPLC"
@@ -49,21 +51,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:hint="@string/KPLC"
-        android:layout_below="@+id/editText4"
+        android:layout_below="@+id/editZuku"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="selectUtility"/>
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/editKPLC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/AccounNO"
         android:inputType="textPersonName"
         android:layout_alignBottom="@+id/checkKPLC"
-        android:layout_alignLeft="@+id/editText4"
-        android:layout_alignStart="@+id/editText4" />
+        android:layout_alignLeft="@+id/editZuku"
+        android:layout_alignStart="@+id/editZuku"
+        android:focusable="false"/>
 
     <CheckBox
         android:id="@+id/checkNCWSC"
@@ -71,20 +74,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
         android:hint="@string/NCWSC"
-        android:layout_below="@+id/editText7"
+        android:layout_below="@+id/editKPLC"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="selectUtility"/>
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/editNCWSC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/AccounNO"
         android:inputType="textPersonName"
         android:layout_alignBottom="@+id/checkNCWSC"
-        android:layout_alignLeft="@+id/editText7"
-        android:layout_alignStart="@+id/editText7" />
+        android:layout_alignLeft="@+id/editKPLC"
+        android:layout_alignStart="@+id/editKPLC"
+        android:focusable="false"/>
 
     <Button
         android:id="@+id/btnSave"
@@ -100,7 +105,7 @@
         tools:layout_editor_absoluteX="52dp"
         android:layout_marginTop="53dp"
         android:layout_below="@+id/checkNCWSC"
-        android:layout_alignRight="@+id/editText8"
-        android:layout_alignEnd="@+id/editText8" />
+        android:layout_alignRight="@+id/editNCWSC"
+        android:layout_alignEnd="@+id/editNCWSC" />
 
 </RelativeLayout>
