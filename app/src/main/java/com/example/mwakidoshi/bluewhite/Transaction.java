@@ -1,10 +1,9 @@
 package com.example.mwakidoshi.bluewhite;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
-import android.text.InputType;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,25 +13,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
 
-import static android.R.id.edit;
-
-public class Utility extends AppCompatActivity
+public class Transaction extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_utility);
-
-
+        setContentView(R.layout.activity_transaction);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -43,79 +33,6 @@ public class Utility extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-        //implement save button
-
-        Button btnSave = (Button) findViewById(R.id.btnSave);
-
-        btnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                AlertDialog.Builder mBuilder = new AlertDialog.Builder(Utility.this);
-                mBuilder.setMessage(R.string.Save_alertbox);
-                mBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener()  {
-
-
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                        Intent intent = new  Intent(getBaseContext(), Utility.class);
-                        startActivity(intent);
-                    }
-                });
-                AlertDialog alertDialog = mBuilder.create();
-                alertDialog.show();
-
-
-            }
-        });
-
-    }
-
-    public void selectUtility(View view) {
-        boolean checked = ((CheckBox) view).isChecked();
-
-        switch (view.getId()) {
-            case R.id.checkZuku:
-                if (checked) {
-                    EditText edit = (EditText) findViewById(R.id.editZuku);
-                    edit.setFocusableInTouchMode(true);
-
-                }
-                else
-                {
-                    EditText edit = (EditText) findViewById(R.id.editZuku);
-                    edit.setFocusableInTouchMode(false);
-                }
-                break;
-            case R.id.checkKPLC:
-                if (checked) {
-                    EditText edit = (EditText) findViewById(R.id.editKPLC);
-                    edit.setFocusableInTouchMode(true);
-
-                }
-                else
-                {
-                    EditText edit = (EditText) findViewById(R.id.editKPLC);
-                    edit.setFocusableInTouchMode(false);
-                }
-                break;
-            case R.id.checkNCWSC:
-                if (checked) {
-                    EditText edit = (EditText) findViewById(R.id.editNCWSC);
-                    edit.setFocusableInTouchMode(true);
-
-                }
-                else
-                {
-                    EditText edit = (EditText) findViewById(R.id.editNCWSC);
-                    edit.setFocusableInTouchMode(false);
-                }
-                break;
-
-
-        }
     }
 
     @Override
@@ -135,18 +52,7 @@ public class Utility extends AppCompatActivity
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override

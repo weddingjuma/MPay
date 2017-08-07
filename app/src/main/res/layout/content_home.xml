@@ -18,21 +18,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please make your payment below"
-        android:layout_alignParentTop="true"
-        tools:ignore="HardcodedText" />
+        android:layout_alignParentTop="true" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkZuku"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/Zuku"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="selectUtility"/>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editZuku"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="11dp"
@@ -40,51 +40,56 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/KES"
-        android:layout_above="@+id/checkBox2"
+        android:layout_above="@+id/checkKPLC"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:focusable="false"/>
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkKPLC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/KPLC"
-        android:layout_below="@+id/checkBox"
+        android:layout_below="@+id/checkZuku"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="selectUtility"/>
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editKPLC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/checkBox2"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
+        android:layout_alignBottom="@+id/checkKPLC"
+        android:layout_alignLeft="@+id/editZuku"
+        android:layout_alignStart="@+id/editZuku"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="@string/KES" />
+        android:hint="@string/KES"
+        android:focusable="false"/>
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/checkNCWSC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
         android:text="@string/NCWSC"
-        android:layout_below="@+id/checkBox2"
+        android:layout_below="@+id/checkKPLC"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="selectUtility"/>
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editNCWSC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/checkBox6"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2"
+        android:layout_alignBottom="@+id/checkNCWSC"
+        android:layout_alignLeft="@+id/editKPLC"
+        android:layout_alignStart="@+id/editKPLC"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="@string/KES" />
+        android:hint="@string/KES"
+        android:focusable="false"/>
 
     <EditText
         android:id="@+id/editText6"
@@ -94,7 +99,7 @@
         android:inputType="textPersonName"
         android:hint="@string/Charges"
         android:layout_marginTop="11dp"
-        android:layout_below="@+id/checkBox6"
+        android:layout_below="@+id/checkNCWSC"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 

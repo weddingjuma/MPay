@@ -95,6 +95,9 @@ public class Change_password extends AppCompatActivity
         } else if (id == R.id.nav_utility) {
             Intent cinemaIntent = new Intent(this, Utility.class);
             startActivity(cinemaIntent);
+        } else if (id == R.id.nav_transaction) {
+            Intent cinemaIntent = new Intent(this, Transaction.class);
+            startActivity(cinemaIntent);
         }
         else if (id == R.id.nav_password) {
             Intent cinemaIntent = new Intent(this, Change_password.class);

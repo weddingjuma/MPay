@@ -30,6 +30,10 @@
         <activity
             android:name=".Change_password"
             android:label="@string/title_activity_change_password"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Transaction"
+            android:label="@string/title_activity_transaction"
             android:theme="@style/AppTheme"></activity>
     </application>
 

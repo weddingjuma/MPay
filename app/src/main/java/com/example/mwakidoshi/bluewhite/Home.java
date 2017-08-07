@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -23,11 +24,8 @@ public class Home extends AppCompatActivity
     DrawerLayout drawer;
     NavigationView navigationView;
     Toolbar toolbar=null;
-    TextView final_account;
     EditText final_result;
-    TextView final_card;
     EditText final_code;
-    TextView expiry;
     EditText expiry_date;
 
     @Override
@@ -118,6 +116,51 @@ public class Home extends AppCompatActivity
 
     }
 
+    public void selectUtility(View view) {
+        boolean checked = ((CheckBox) view).isChecked();
+
+        switch (view.getId()) {
+            case R.id.checkZuku:
+                if (checked) {
+                    EditText edit = (EditText) findViewById(R.id.editZuku);
+                    edit.setFocusableInTouchMode(true);
+
+                }
+                else
+                {
+                    EditText edit = (EditText) findViewById(R.id.editZuku);
+                    edit.setFocusableInTouchMode(false);
+                }
+                break;
+            case R.id.checkKPLC:
+                if (checked) {
+                    EditText edit = (EditText) findViewById(R.id.editKPLC);
+                    edit.setFocusableInTouchMode(true);
+
+                }
+                else
+                {
+                    EditText edit = (EditText) findViewById(R.id.editKPLC);
+                    edit.setFocusableInTouchMode(false);
+                }
+                break;
+            case R.id.checkNCWSC:
+                if (checked) {
+                    EditText edit = (EditText) findViewById(R.id.editNCWSC);
+                    edit.setFocusableInTouchMode(true);
+
+                }
+                else
+                {
+                    EditText edit = (EditText) findViewById(R.id.editNCWSC);
+                    edit.setFocusableInTouchMode(false);
+                }
+                break;
+
+
+        }
+    }
+
 
 
     @Override
@@ -153,7 +196,11 @@ public class Home extends AppCompatActivity
         } else if (id == R.id.nav_utility) {
             Intent cinemaIntent = new Intent(this, Utility.class);
             startActivity(cinemaIntent);
+        } else if (id == R.id.nav_transaction) {
+            Intent cinemaIntent = new Intent(this, Transaction.class);
+            startActivity(cinemaIntent);
         }
+
          else if (id == R.id.nav_password) {
             Intent cinemaIntent = new Intent(this, Change_password.class);
             startActivity(cinemaIntent);

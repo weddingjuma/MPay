@@ -54,7 +54,7 @@
     <string name="setting">Setting</string>
     <string name="logout">Logout</string>
     <string name="change_password">Change password</string>
-    <string name="make_payment">Make Payment</string>
+    <string name="make_payment">Make payment</string>
     <string name="Utility_provider">Utility provider</string>
     <string name="card_number">Card number</string>
     <string name="security_code">Security code</string>
@@ -65,4 +65,6 @@
     <string name="choose_method_of_payment_below">Choose method of payment below</string>
     <string name="title_activity_change_password">Change_password</string>
     <string name="Update_pass">Your password has been successfully updated</string>
+    <string name="title_activity_transaction">Transaction</string>
+    <string name="transaction_summary">Transaction summary</string>
 </resources>
